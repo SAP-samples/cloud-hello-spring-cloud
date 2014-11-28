@@ -1,7 +1,5 @@
 package helloworld;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.sql.Connection;
@@ -21,7 +19,6 @@ import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.util.ReflectionUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -67,7 +64,7 @@ public class HomeController
 		}
 		else
 		{
-Connection conn = null;
+			Connection conn = null;
 			
 			try
 	        {

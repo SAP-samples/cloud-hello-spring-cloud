@@ -35,6 +35,7 @@ public class CloudConfig extends AbstractCloudConfig
 			ex.printStackTrace();
 		}
 		
-		return retVal;	
+		return retVal;
+		
 	}
 }
