@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc 	http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+		http://www.springframework.org/schema/beans 	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+	
+	<!-- import the app-context.xml -->
+	<import resource="classpath:/META-INF/spring/app-context.xml" />
+
+	<mvc:annotation-driven />
+
+	<bean id="templateResolver"
+        class="org.thymeleaf.templateresolver.ServletContextTemplateResolver">
+    <property name="prefix" value="/WEB-INF/templates/" />
+    <property name="suffix" value=".html" />
+    <property name="templateMode" value="HTML5" />
+  </bean>
+    
+  <bean id="templateEngine"
+        class="org.thymeleaf.spring4.SpringTemplateEngine">
+    <property name="templateResolver" ref="templateResolver" />
+  </bean>
+   
+  <bean class="org.thymeleaf.spring4.view.ThymeleafViewResolver">
+    <property name="templateEngine" ref="templateEngine" />
+  </bean>    
+	
+	
+</beans>
