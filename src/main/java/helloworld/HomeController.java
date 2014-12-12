@@ -44,10 +44,10 @@ public class HomeController
 	{
 		Map<Class<?>, String> services = new LinkedHashMap<Class<?>, String>();
 		
-		if (dataSource != null) services.put(dataSource.getClass(), toString(dataSource));
-		if (mongoDbFactory != null)  services.put(mongoDbFactory.getClass(), toString(mongoDbFactory));
-		if (redisConnectionFactory != null)  services.put(redisConnectionFactory.getClass(), toString(redisConnectionFactory));
-		if (rabbitConnectionFactory != null) services.put(rabbitConnectionFactory.getClass(), toString(rabbitConnectionFactory));
+		if (dataSource != null) services.put(getClass(dataSource), toString(dataSource));
+		if (mongoDbFactory != null)  services.put(getClass(mongoDbFactory), toString(mongoDbFactory));
+		if (redisConnectionFactory != null)  services.put(getClass(redisConnectionFactory), toString(redisConnectionFactory));
+		if (rabbitConnectionFactory != null) services.put(getClass(rabbitConnectionFactory), toString(rabbitConnectionFactory));
 		
 		model.addAttribute("services", services.entrySet());
 		model.addAttribute("instanceInfo", instanceInfo);
@@ -159,6 +159,18 @@ public class HomeController
 		{
 			System.out.println(e);
 			return "<bad url> " + urlString;
+		}
+	}
+	
+	private static Class<?> getClass(Object obj)
+	{
+		if (obj != null)
+		{
+			return obj.getClass();
+		}
+		else
+		{
+			return null;
 		}
 	}
 

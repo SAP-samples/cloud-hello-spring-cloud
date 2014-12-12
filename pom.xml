@@ -227,5 +227,27 @@
 			<url>http://repo.springsource.org/release</url>
 		</pluginRepository>
 	</pluginRepositories>
+	
+	<organization>
+        <name>SAP SE</name>
+        <url>http://www.sap.com</url>
+    </organization>
+    
+    <developers>
+        <developer>
+            <name>SAP HANA Cloud Platform</name>
+            <url>http://hcp.sap.com</url>
+            <organization>SAP SE</organization>
+            <organizationUrl>http://www.sap.com/</organizationUrl>
+        </developer>
+    </developers>
+    
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
 </project>
