@@ -9,7 +9,7 @@ The main differences between the original sample and this fork/rewrite are as fo
 + the original version compiles to a JAR file, this fork uses the classic WAR format for deployment
 + this fork provides the needed dependencies to run the application on the [SAP HANA Cloud Platform](http://hcp.sap.com)  
 
->> **NOTE**: For further information please refer to the respective blog post: [Released: Spring Cloud Connectors for HCP](http://scn.sap.com/community/developer-center/cloud-platform/blog/2014/12/12/released-spring-cloud-connectors-for-hcp) 
+> **NOTE**: For further information please refer to the respective blog post: [Released: Spring Cloud Connectors for HCP](http://scn.sap.com/community/developer-center/cloud-platform/blog/2014/12/12/released-spring-cloud-connectors-for-hcp) 
 
 Quick start
 -----------
@@ -24,7 +24,7 @@ The application should run as-is without any changes required.
 
 Please remember to adjust the declared services within the [`manifest.yml`](/manifest.yml) file as required for your runtime environment! 
 
->> **NOTE:** If you intend to deploy this application to a Cloud Foundry landscape provided by SAP or its partners in order to leverage the capabilities of the SAP HANA database platform you need to manually provide the HANA JDBC driver (`ngdbc.jar`) within the [`WEB-INF/lib`](/src/main/webapp/WEB-INF/lib) folder. 
+> **NOTE:** If you intend to deploy this application to a Cloud Foundry landscape provided by SAP or its partners in order to leverage the capabilities of the SAP HANA database platform you need to manually provide the HANA JDBC driver (`ngdbc.jar`) within the [`WEB-INF/lib`](/src/main/webapp/WEB-INF/lib) folder. 
 
 
 
