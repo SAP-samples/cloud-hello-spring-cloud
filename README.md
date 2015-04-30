@@ -20,6 +20,9 @@ Clone the repo, `git clone https://github.com/SAP/cloud-hello-spring-cloud.git`,
 
 The application should run as-is without any changes required. 
 
+> **NOTE:** If you intend to deploy this application locally, you need to
+add the `HC_LANDSCAPE` environment variable to your local server launch configuration. Use an arbitrary value e.g. `local`.
+
 ### Cloud Foundry
 
 Please remember to adjust the declared services within the [`manifest.yml`](/manifest.yml) file as required for your runtime environment! 
