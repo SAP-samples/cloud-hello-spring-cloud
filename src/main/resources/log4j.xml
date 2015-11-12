@@ -36,7 +36,11 @@
 	</logger>
 	
 	<logger name="com.sap.hana.cloud.hcp">
-		<level value="all" />
+		<level value="debug" />
+	</logger>
+	
+	<logger name="com.sap.hana.cloud.hcp.cf">
+		<level value="debug" />
 	</logger>
 
 	<!-- Root Logger -->

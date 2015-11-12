@@ -1,10 +1,10 @@
 applications:
-- name: hello-spring-cloud
+- name: hello-spring-cloud-${random-word}
   memory: 512M
   instances: 1
-  host: hello-spring-cloud-${random-word}
+  host: hello-spring-cloud
   path: target/ROOT.war
   services:
-    - hana_shared
+    - hana
   env:
     SPRING_PROFILES_DEFAULT: cloud

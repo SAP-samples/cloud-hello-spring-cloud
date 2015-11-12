@@ -5,7 +5,7 @@
 
 	<groupId>com.sap.hana.cloud.samples</groupId>
 	<artifactId>hello-spring-cloud</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>hello-spring-cloud</name>
 	<description>Simple sample demonstrating the usage of Spring Cloud Connectors</description>
 	<url>https://github.com/SAP/cloud-hello-spring-cloud</url>
@@ -16,11 +16,11 @@
 		<start-class>helloworld.Application</start-class>
 		<java.version>1.7</java.version>
 
-		<org.springframework.cloud-version>1.1.0.RELEASE</org.springframework.cloud-version>
+		<org.springframework.cloud-version>1.2.0.RELEASE</org.springframework.cloud-version>
 		<org.springframework-version>4.0.5.RELEASE</org.springframework-version>
 		<org.springframework.data-version>1.6.1.RELEASE</org.springframework.data-version>
 		<org.slf4j-version>1.7.2</org.slf4j-version>
-		<com.sap.hana.cloud-version>1.0.1.RELEASE</com.sap.hana.cloud-version>
+		<com.sap.hana.cloud-version>1.0.2.RELEASE</com.sap.hana.cloud-version>
 	</properties>
 
 	<dependencies>
@@ -43,19 +43,16 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-		
 		<dependency>
 		    <groupId>org.springframework.data</groupId>
 		    <artifactId>spring-data-redis</artifactId>
 		    <version>1.4.1.RELEASE</version>
 		</dependency>
-		
 		<dependency>
 		    <groupId>org.springframework.data</groupId>
 		    <artifactId>spring-data-mongodb</artifactId>
 		    <version>1.6.1.RELEASE</version>
 		</dependency>
-
 		<dependency>
 		    <groupId>org.springframework.amqp</groupId>
 		    <artifactId>spring-rabbit</artifactId>
@@ -104,6 +101,7 @@
 	       <artifactId>spring-cloud-cloudfoundry-hana-service-connector</artifactId> 
 		   <version>${com.sap.hana.cloud-version}</version> 
 		</dependency> 
+		
 
 		<!-- Logging -->
 		<dependency>
