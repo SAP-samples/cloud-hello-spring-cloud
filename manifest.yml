@@ -1,10 +1,10 @@
 applications:
-- name: hello-spring-cloud-${random-word}
+- name: hello-spring-cloud
   memory: 512M
   instances: 1
   host: hello-spring-cloud
   path: target/ROOT.war
   services:
-    - hana
+    - postgres
   env:
     SPRING_PROFILES_DEFAULT: cloud
