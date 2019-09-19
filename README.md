@@ -1,4 +1,13 @@
-SAP HANA Cloud Platform Samples - hello spring cloud
+
+![](https://img.shields.io/badge/STATUS-NOT%20CURRENTLY%20MAINTAINED-red.svg?longCache=true&style=flat)
+
+# Important Notice
+SAP has decided to stop the maintenance of this open source project and hence it'll soon be sunsetted and archived. 
+
+Going forward, please look at [SAP Cloud Platform Appliation Programming Model](https://cap.cloud.sap) as the recommended approach to develop cloud applications with SAP Cloud Platform. 
+
+
+SAP Cloud Platform Samples - hello spring cloud
 ========
 
 This project demonstrates the usage of [Spring Cloud Connectors](http://cloud.spring.io/spring-cloud-connectors/) within a classic web application. In fact, it's a fork/rewrite of a [sample application](https://github.com/cloudfoundry-samples/hello-spring-cloud) provided as part of the Cloud Foundry samples.
@@ -7,7 +16,7 @@ The main differences between the original sample and this fork/rewrite are as fo
 
 + the original version used [Spring Boot](http://projects.spring.io/spring-boot/), this fork sticks to the classic approach of Spring
 + the original version compiles to a JAR file, this fork uses the classic WAR format for deployment
-+ this fork provides the needed dependencies to run the application on the [SAP HANA Cloud Platform](http://hcp.sap.com)  
++ this fork provides the needed dependencies to run the application on the [SAP Cloud Platform](http://cloudplatform.sap.com)  
 
 > **NOTE**: For further information please refer to the respective blog post: [Released: Spring Cloud Connectors for HCP](http://scn.sap.com/community/developer-center/cloud-platform/blog/2014/12/12/released-spring-cloud-connectors-for-hcp) 
 
@@ -16,7 +25,7 @@ Quick start
 
 Clone the repo, `git clone https://github.com/SAP/cloud-hello-spring-cloud.git`, or [download the latest release](https://github.com/SAP/cloud-hello-spring-cloud/archive/master.zip), then run a Maven build and deploy the application to your cloud platform of choice. 
 
-### SAP HANA Cloud Platform
+### SAP Cloud Platform
 
 The application should run as-is without any changes required. 
 
